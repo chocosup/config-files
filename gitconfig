@@ -1,0 +1,35 @@
+[alias]
+	f = fetch
+	b = branch
+	l = log
+	s = status
+	cm = commit
+	ck = checkout
+	ps = push
+	pl = pull
+	a = add
+	rb = rebase
+	m = merge
+	rs = reset
+	r = remote
+	d = diff
+	lg = !"git lg1"
+	lg1 = !"git lg1-specific --all"
+	lg2 = !"git lg2-specific --all"
+	lg3 = !"git lg3-specific --all"
+	
+	lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold blue)(%ar)%C(reset) %C(white)%s%C(reset) %C(yellow)- %an%C(reset)%C(auto)%d%C(reset)'
+	lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold blue)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(yellow)- %an <%ae> %C(reset)'
+	lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold blue)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(yellow)- %an <%ae> %C(reset) %C(yellow)(committer: %cn <%ce>)%C(reset)'
+	slg = !"git lg1 --show-signature"
+	slg2 = !"git lg2 --show-signature"
+[push]
+	default = simple
+[user]
+	name = Ambroise
+	email = ambroise.marigot.stag@axa.com
+	signingkey = 3567E2F8
+[merge]
+	tool = meld
+[credential]
+	helper = osxkeychain

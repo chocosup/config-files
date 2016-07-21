@@ -1,0 +1,13 @@
+Host clipper
+	Hostname sas.eleves.ens.fr
+	User marigot
+Host azure
+	Hostname agpc.cloudapp.net
+	User azureuser
+Host geocoding
+	Hostname axageocoding.cloudapp.net
+	User git
+Host lacentrale
+	Hostname axa-lacentrale-pricing.cloudapp.net
+	User axa
+
